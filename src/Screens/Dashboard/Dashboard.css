@@ -1,0 +1,34 @@
+/*******************Global*****************/
+.content-flex {
+  display: flex;
+  background-color: #a7a1d2;
+}
+
+/*----------------Table------------------*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+tr:nth-child(even) {
+  background: #e7e4f7;
+}
+
+th,
+td {
+  border: 1px solid #7820ca;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+th {
+  background: #49038a;
+  color: #fff;
+}
+
+td {
+  white-space: nowarp;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

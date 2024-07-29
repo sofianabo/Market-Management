@@ -1,0 +1,18 @@
+/* Global css*/
+* {
+  box-sizing: border-box;
+}
+
+.shaddow {
+  box-shadow: 1px 1px 10px 1px #cbc9c9;
+}
+
+.container {
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+}

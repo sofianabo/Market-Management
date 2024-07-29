@@ -1,0 +1,167 @@
+/****************Forms*************/
+.parent_SignUp {
+  display: flex;
+  justify-content: center;
+  align-items: "center";
+  height: 80vh;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+form {
+  width: 500px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input {
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+input:focus {
+  border: 2px solid #49038a;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+.butt,
+.register-nav {
+  outline: none;
+  border: none;
+  background-color: #49038a;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.butt:hover,
+.register-nav:hover {
+  background-color: white;
+  border: 2px solid #49038a;
+  color: #49038a; 
+}
+
+/****************Button****************/
+ .btn {
+  outline: none;
+  border: none;
+  background-color: #49038a;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin: 25px;
+  color: white;
+  font-weight: bold;
+  width: 120px;
+  height: 50px;
+  letter-spacing: 2px;
+  -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+  transition: 0.45s;
+  border: 2px solid white;
+  font-size: 14px;
+  transition-delay: 0s;
+}
+.btn:hover{
+  background-color: white;
+  border: 2px solid #49038a;
+  font-weight: bold;
+  font-size: 14px;
+  color: #49038a; 
+}
+
+.btn span {
+  position: relative;
+  z-index: 100;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #49038a;
+  box-shadow: 5px -8px 0 #49038a, 5px 8px 0 #49038a;
+  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #49038a;
+  box-shadow: -5px -8px 0 #49038a, -5px 8px 0 #49038a;
+  transition: width 0.5s, right 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.hover {
+  transition-delay: 0.5s;
+  border: 2px solid white;
+  color: #49038a;
+background-color: white;
+ 
+}
+
+
+.hover::before {
+  height: 100%;
+  width: 50%;
+  left: -1px;
+  box-shadow: 5px 0 0 #49038a, 5px 0 0 #49038a;
+  transition-delay: 0s, 0s, 0.5s, 1s;
+}
+
+.hover::after {
+  height: 100%;
+  width: 50%;
+  right: -1px;
+  box-shadow: -5px 0 0 #49038a, -5px 0 0 #49038a;
+  transition-delay: 0s, 0s, 0.5s, 1s;
+}
+
+.hover:hover {
+  color: white;
+  border: 2px solid #49038a;
+}
